@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login Form</title>
+ <style>
+body{
+    margin:0;
+    padding: 0;
+    background: url(images/image1.png);
+    background-size:cover;
+    background-position:center;
+    font-family:san-serif;
+}
+.loginbox{
+    width: 70%;
+    height:420px;
+    background: #000;
+    color:#fff;
+    top:50%;
+    position:absolute;
+    transform: translate(30%, -40%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+        }
+.avatar{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% -50px);
+    }
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox p{
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+}
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"] .loginbox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"] {
+      border: none;
+      outline: none;
+      height: 40px;
+      background: #fb2525;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 20px;
+    }
+.loginbox input[type="submit"]:hover {
+      cursor: pointer;
+      background: #ffc107;
+      color: #000;
+    }    
+.loginbox a{
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 20px;
+      color: darkgrey;
+    }
+.loginbox a:hover{
+       color: #ffc107;
+     }
+    
+  </style>
+  </head>
+  <body>
+    <div class="loginbox">
+      <img src="images/avatar.png" class="avatar">
+      <h1>Login Page</h1>
+      <form>
+        <p>Email:</p>
+        <input type="email" placeholder="Your Email"  id="email" required/>
+           <p>Password:</p>
+         <input type="password" placeholder="Your Password" id="password" required/>
+         <input type="submit" name="Login" valid="login" onclick="auth()"/>
+        <a href="#">Lost Your Password?</a>
+        <a href="/registration.html">Don't have an account?Click to signup</a>
+      </form>
+    </div>
+    <script>
+      function auth(){
+        var email= document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        if(email=="admin@gmail.com" && password=="admin123"){
+          window.location.href="success.html";
+          
+         }
+        else{
+          alert("Invalid email or password");
+         }
+      }
+    </script>
+  </body>
+</html>
+
+
