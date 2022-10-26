@@ -1,0 +1,128 @@
+Read the following questions and provide the correct answers:
+
+1. _____ represents an entity in the real world with its identity and behaviour.
+
+A.) A class
+ 
+
+2. _____ is used to create an object.
+
+B.) A function
+
+3. Class “Football” inherits from the class “Sport”. How do I correctly specify this in my python code?
+
+C.) class Football(Sport) 
+
+ 4. Which of the following does not correctly create an object instance?
+
+D.) honda = Car()
+
+ 5. What does the following code output?
+
+class People():
+
+    def __init__(self, name):
+
+      self.name = name
+
+ 
+
+    def print_name(self):
+
+      print(self.name)
+
+ 
+
+  person1 = People("Gregory")
+
+  person2 = People("Mike")
+
+  person1.print_name()   
+
+D.) Gregory Mike
+
+6. What will be the output of the following Python code?
+
+class test:
+
+     def __init__(self,a=""Welcome to Zuri""):
+
+         self.a=a
+
+ 
+
+     def display(self):
+
+         print(self.a)
+
+obj=test()
+
+obj.display()
+
+C.) The program has an error display function doesn’t have parameters
+
+
+7. What is Instantiation in terms of OOP terminology?
+
+D.) Modifying an instance of a class
+
+
+ 
+
+8. The _________ keyword defines a template indicating the data that will be in an object of the class and the functions that can be called on an object of the class.
+
+A.) init
+ 
+
+9. _________ is not a keyword, but by convention, it is used to refer to the current instance (object) of a class.
+
+B.) self 
+
+C.) def
+ 
+
+10. What is the output of the following code?
+class Pokemon():
+
+ 
+
+    def __init__(self, name, type):
+
+        self.name = name
+
+        self.type = type
+
+ 
+
+    def stringPokemon(self):
+
+        print(f"Pokemon name is {self.name} and type is {self.type}")
+
+ 
+
+class GrassType(Pokemon):
+
+ 
+
+    # overrides the stringPokemon() function on 'Pokemon' class
+
+    def stringPokemon(self):
+
+        print(f"Grass type pokemon name is {self.name}")
+
+ 
+
+poke1 = GrassType('Bulbasaur', 'Grass')
+
+poke1.stringPokemon
+
+poke1.stringPokemon()
+
+poke2 = Pokemon('Charizard', 'Fire')
+
+poke2.stringPokemon
+
+poke2.stringPokemon()
+
+
+ B.) Grass type pokemon name is Bulbasaur Grass type pokemon name is Charizar
